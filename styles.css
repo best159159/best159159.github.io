@@ -868,49 +868,7 @@ section {
     min-height: 500px;
 }
 
-.map-placeholder {
-    background: var(--white);
-    height: 100%;
-    border-radius: 20px;
-    text-align: center;
-    color: var(--gray);
-    box-shadow: var(--shadow-lg);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 60px 40px;
-    position: relative;
-    overflow: hidden;
-}
 
-.map-placeholder::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background:
-        radial-gradient(circle at 30% 40%, rgba(255, 107, 53, 0.05) 0%, transparent 50%),
-        radial-gradient(circle at 70% 60%, rgba(255, 215, 0, 0.03) 0%, transparent 50%);
-    pointer-events: none;
-}
-
-.map-placeholder svg {
-    color: var(--accent-color);
-    margin-bottom: 24px;
-    position: relative;
-    z-index: 1;
-    filter: drop-shadow(0 4px 8px rgba(255, 107, 53, 0.2));
-}
-
-.map-placeholder p {
-    position: relative;
-    z-index: 1;
-    font-size: 1.1rem;
-    font-weight: 500;
-}
 
 /* =========================================
    Footer
