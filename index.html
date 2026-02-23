@@ -42,49 +42,64 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="hero-bg"></div>
+        <div class="hero-slideshow">
+            <div class="hero-slide" style="background-image: url('2.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('5.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('8.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('10.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('15.jpg');"></div>
+            <div class="hero-slide-overlay"></div>
+        </div>
         <div class="hero-particles" id="particles"></div>
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">
-                    <span class="hero-title-main">สมชายการช่าง</span>
-                    <span class="hero-title-sub">ผู้รับเหมาก่อสร้างครบวงจร</span>
-                </h1>
-                <p class="hero-description">
-                    สร้างบ้าน ต่อเติม รีโนเวท งานโครงสร้าง<br>
-                    ด้วยทีมงานมืออาชีพ มากกว่า 10 ปี
-                </p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">
-                        <span>ติดต่อเรา</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14M12 5l7 7-7 7" />
-                        </svg>
-                    </a>
-                    <a href="#portfolio" class="btn btn-secondary">
-                        <span>ดูผลงาน</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="3" y="3" width="18" height="18" rx="2" />
-                            <circle cx="8.5" cy="8.5" r="1.5" />
-                            <path d="M20.4 14.5L16 10 4 20" />
-                        </svg>
-                    </a>
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="hero-title-main">สร้างสรรค์ทุกสิ่ง <br>ตามที่คุณต้องการ</span>
+                        <span class="hero-title-sub">สมชายการช่าง ผู้รับเหมาก่อสร้างครบวงจร</span>
+                    </h1>
+                    <p class="hero-description">
+                        สร้างบ้าน ต่อเติม รีโนเวท งานโครงสร้าง<br>
+                        ด้วยทีมงานมืออาชีพ มากกว่า 10 ปี รับประกันคุณภาพทุกขั้นตอน
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#services" class="btn btn-primary">
+                            <span>บริการของเรา</span>
+                        </a>
+                        <a href="#portfolio" class="btn btn-text">
+                            <span>ดูผลงานทั้งหมด</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="hero-stats-cards">
+                        <div class="stat-card">
+                            <div style="display: flex; justify-content: center; align-items: baseline; gap: 2px;">
+                                <span class="stat-value" data-count="20">0</span>
+                                <span style="font-size: 2.2rem; font-weight: 800; color: white;">+</span>
+                            </div>
+                            <span class="stat-desc">ปีแห่ง<br>ประสบการณ์</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-value" data-count="30">0</span>
+                            <span class="stat-desc">โครงการ<br>ที่สำเร็จ</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-value" data-count="15">0</span>
+                            <span class="stat-desc">ลูกค้า<br>พึ่งพอใจ</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <div class="stat-number" data-count="10">0</div>
-                        <div class="stat-label">ปีประสบการณ์</div>
+                <div class="hero-image-container">
+                    <div class="image-wrapper">
+                        <img src="9.jpg" alt="Construction Worker">
                     </div>
-                    <div class="stat-item">
-                        <div class="stat-number" data-count="20">0</div>
-                        <div class="stat-label">โครงการสำเร็จ</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number" data-count="20">0</div>
-                        <div class="stat-label">ลูกค้าพึงพอใจ</div>
-                    </div>
+                    <!-- Decorative Elements -->
+                    <div class="hero-pattern"></div>
                 </div>
             </div>
         </div>
@@ -274,6 +289,66 @@
                                 <h4>โครงการก่อสร้าง</h4>
                             </div>
                         </div>
+                        <div class="carousel-slide">
+                            <img src="9.jpg" alt="ผลงาน 9">
+                            <div class="slide-overlay">
+                                <h4>โครงการก่อสร้าง</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="10.jpg" alt="ผลงาน 10">
+                            <div class="slide-overlay">
+                                <h4>โครงการก่อสร้าง</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="11.jpg" alt="ผลงาน 11">
+                            <div class="slide-overlay">
+                                <h4>โครงการก่อสร้าง</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="12.jpg" alt="ผลงาน 12">
+                            <div class="slide-overlay">
+                                <h4>โครงการก่อสร้าง</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="13.jpg" alt="ผลงาน 13">
+                            <div class="slide-overlay">
+                                <h4>โครงการก่อสร้าง</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="14.jpg" alt="ผลงาน 14">
+                            <div class="slide-overlay">
+                                <h4>โครงการก่อสร้าง</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="15.jpg" alt="ผลงาน 15">
+                            <div class="slide-overlay">
+                                <h4>โครงการก่อสร้าง</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="16.jpg" alt="ผลงาน 16">
+                            <div class="slide-overlay">
+                                <h4>โครงการก่อสร้าง</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="17.jpg" alt="ผลงาน 17">
+                            <div class="slide-overlay">
+                                <h4>โครงการก่อสร้าง</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="18.jpg" alt="ผลงาน 18">
+                            <div class="slide-overlay">
+                                <h4>โครงการก่อสร้าง</h4>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <button class="carousel-btn carousel-btn-prev" id="prevBtn">
@@ -443,8 +518,8 @@
                 <div class="footer-contact">
                     <h4>ติดต่อเรา</h4>
                     <ul>
-                        <li>📞 089-XXX-XXXX</li>
-                        <li>📧 somchai.construction@gmail.com</li>
+                        <li>📞 064-259-0738</li>
+                        <li>📧 best17794@gmail.com</li>
                         <li>📍 จังหวัดสิงห์บุรี</li>
                     </ul>
                 </div>

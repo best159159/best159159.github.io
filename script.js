@@ -97,7 +97,7 @@ function animateCounter(element) {
 const counterObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            const statNumbers = entry.target.querySelectorAll('.stat-number');
+            const statNumbers = entry.target.querySelectorAll('.stat-value');
             statNumbers.forEach(stat => {
                 if (stat.textContent === '0') {
                     animateCounter(stat);
@@ -108,7 +108,7 @@ const counterObserver = new IntersectionObserver((entries) => {
     });
 }, { threshold: 0.5 });
 
-const heroStats = document.querySelector('.hero-stats');
+const heroStats = document.querySelector('.hero-stats-cards');
 if (heroStats) {
     counterObserver.observe(heroStats);
 }
